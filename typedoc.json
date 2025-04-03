@@ -1,0 +1,43 @@
+{
+  "name": "Layout Calculator",
+  // "theme": "default",
+  "plugin": [
+    "typedoc-github-theme",
+    // "typedoc-plugin-markdown"
+  ],
+  "entryPoints": [
+    "index.ts"
+  ],
+  "alwaysCreateEntryPointModule": false,
+  "navigation": {
+    "includeFolders": false,
+    "compactFolders": false,
+    "includeGroups": true,
+    "includeCategories": true,
+    "excludeReferences": false
+  },
+  "categorizeByGroup": false,
+  "out": "docs",
+  "cleanOutputDir": true,
+  "readme": "none",
+  "favicon": "public/AIO.png",
+  "tsconfig": "./tsconfig.json",
+  "excludePrivate": false, // keep private items to be documented.
+  "excludeProtected": false, // keep protected items to be documented.
+  "excludeExternals": true,
+  "disableSources": true,
+  "commentStyle": "all",
+  "jsDocCompatibility": {
+    "exampleTag": true,
+    "defaultTag": true,
+    "inheritDocTag": true,
+    "ignoreUnescapedBraces": true
+  },
+  "externalSymbolLinkMappings": {
+    "global": {
+      "ymgh": "https://github.com/sieteminerva"
+    }
+  },
+  "suppressCommentWarningsInDeclarationFiles": true,
+  "intentionallyNotExported": [] // add this to prevent error :  Cannot find any symbols with the specified entry points
+}
